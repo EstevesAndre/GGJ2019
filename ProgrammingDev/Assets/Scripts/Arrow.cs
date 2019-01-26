@@ -36,13 +36,17 @@ public class Arrow : MonoBehaviour
 
         if (other.gameObject.tag == "Enemy")
         {
+            DestroyObject();
             other.gameObject.GetComponent<Enemy>().OnHit(arrowDamage);
         }
         else if (other.gameObject.tag == "Player")
         {
-            other.gameObject.GetComponent<Player>().OnHit(arrowDamage);
-        }            
+            Debug.Log("HERE");
+            DestroyObject();
+            other.gameObject.GetComponentInChildren<Player>().OnHit(arrowDamage);
+        }       
     }
+
 
     public void sendSpawn(arrowSpawn spawn)
     {
@@ -52,6 +56,6 @@ public class Arrow : MonoBehaviour
     private void DestroyObject()
     {
         arrowSp.removeOneArrow();
-        Destroy(this);
+        Destroy(gameObject);
     }
 }
