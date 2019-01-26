@@ -12,12 +12,9 @@ public class Attack : MonoBehaviour
         anim = GetComponent<Animator>();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void DoesAttack()
     {
-        if (Input.GetButton("Fire1"))
-        {
-            anim.SetTrigger("Attack");
-        }
+        anim.SetTrigger("Attack");
     }
+
 }

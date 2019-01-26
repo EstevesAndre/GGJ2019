@@ -17,9 +17,9 @@ TagManager:
   - PostProcessing
   - Player
   - Enemy
-  - 
-  - 
-  - 
+  - WalkableTerrain
+  - Unwalkable Terrain
+  - TerrainObjetcs
   - 
   - 
   - 

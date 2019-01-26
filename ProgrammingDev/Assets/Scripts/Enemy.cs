@@ -9,29 +9,41 @@ public class Enemy : MonoBehaviour
     public float damage = 10f;
     public GameObject player;
     public float hitCoolTime = 1f;
+    public float rotationSpeed = 10f;
 
     private NavMeshAgent agent;
     private Player playerScript;
     private bool hitCooldown = false;
+    private Attack swordScript;
 
     // Start is called before the first frame update
     void Start()
     {
+        swordScript = GetComponentInChildren<Attack>();
         agent = this.gameObject.GetComponent<NavMeshAgent>();
+        player = GameObject.FindGameObjectWithTag("Player");
         playerScript = player.GetComponent<Player>();
     }
 
     private void Update()
     {
-        agent.SetDestination(player.transform.position);
         Vector3 vec = this.gameObject.transform.position - player.transform.position;
-        if (!hitCooldown && vec.magnitude < 2.0f) {
+        transform.LookAt(player.transform);
+
+        if (vec.magnitude >= 2.0f)
+        {            
+            agent.SetDestination(player.transform.position);
+        }
+        else if (!hitCooldown)
+        {
+            swordScript.DoesAttack();
             playerScript.OnHit(damage);
             StartCoroutine("HitCooldown");
         }
     }
 
     public void OnHit(float rec_damage) {
+        Debug.Log("Enemy Hit for " + rec_damage + ". Initial Health: " + health);
         health -= rec_damage;
         if (health <= 0) {
             Die();
@@ -41,6 +53,8 @@ public class Enemy : MonoBehaviour
     void Die() {
         //TODO: Play animation
         //TODO: Play sound
+        Debug.Log("Dead!");
+        Destroy(gameObject);
     }
 
     IEnumerator HitCooldown() {
