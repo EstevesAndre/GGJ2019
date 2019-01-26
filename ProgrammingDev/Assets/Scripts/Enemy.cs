@@ -43,7 +43,7 @@ public class Enemy : MonoBehaviour
     }
 
     public void OnHit(float rec_damage) {
-        // Debug.Log("Enemy Hit for " + rec_damage + ". Initial Health: " + health);
+        Debug.Log("Enemy Hit for " + rec_damage + ". Initial Health: " + health);
         health -= rec_damage;
         if (health <= 0) {
             Die();

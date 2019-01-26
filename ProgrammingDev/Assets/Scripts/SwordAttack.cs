@@ -13,7 +13,7 @@ public class SwordAttack : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
-        // Debug.Log(other.gameObject.tag);
+        //Debug.Log(other.gameObject.tag);
         if (other.gameObject.tag == "Enemy") {
             other.gameObject.GetComponent<Enemy>().OnHit(playerDamage);
         }
