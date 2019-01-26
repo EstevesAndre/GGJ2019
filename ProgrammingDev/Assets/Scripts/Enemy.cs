@@ -9,6 +9,7 @@ public class Enemy : MonoBehaviour
     public float damage = 10f;
     public GameObject player;
     public float hitCoolTime = 1f;
+    public float rotationSpeed = 10f;
 
     private NavMeshAgent agent;
     private Player playerScript;
@@ -28,6 +29,9 @@ public class Enemy : MonoBehaviour
     {
         Vector3 vec = this.gameObject.transform.position - player.transform.position;
         transform.LookAt(player.transform.position);
+        Quaternion q = transform.rotation;
+        q.eulerAngles = new Vector3 (0f, transform.rotation.eulerAngles.y, 0f);
+        transform.rotation = q;
 
         if (vec.magnitude >= 2.0f)
         {            
