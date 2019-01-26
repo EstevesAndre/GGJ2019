@@ -13,10 +13,12 @@ public class Enemy : MonoBehaviour
     private NavMeshAgent agent;
     private Player playerScript;
     private bool hitCooldown = false;
+    private Attack swordScript;
 
     // Start is called before the first frame update
     void Start()
     {
+        swordScript = GetComponentInChildren<Attack>();
         agent = this.gameObject.GetComponent<NavMeshAgent>();
         playerScript = player.GetComponent<Player>();
     }
@@ -24,11 +26,15 @@ public class Enemy : MonoBehaviour
     private void Update()
     {
         Vector3 vec = this.gameObject.transform.position - player.transform.position;
+        transform.LookAt(player.transform.position);
+
         if (vec.magnitude >= 2.0f)
-        {
+        {            
             agent.SetDestination(player.transform.position);
         }
-        else if (!hitCooldown) {
+        else if (!hitCooldown)
+        {
+            swordScript.DoesAttack();
             playerScript.OnHit(damage);
             StartCoroutine("HitCooldown");
         }

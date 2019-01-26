@@ -9,15 +9,12 @@ public class Attack : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        anim = GetComponent<Animator>();
+        anim = GetComponentInChildren<Animator>();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void DoesAttack()
     {
-        if (Input.GetButton("Fire1"))
-        {
-            anim.SetTrigger("Attack");
-        }
+        anim.SetTrigger("Attack");
     }
+
 }
