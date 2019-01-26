@@ -77,6 +77,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thrust: 500
+  arrowDamage: 20
 --- !u!1 &8533945559515468823
 GameObject:
   m_ObjectHideFlags: 0
