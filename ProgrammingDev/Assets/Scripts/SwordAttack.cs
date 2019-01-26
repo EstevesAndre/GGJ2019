@@ -19,7 +19,7 @@ public class SwordAttack : MonoBehaviour
     private void OnCollisionStay(Collision other)
     {
         //Debug.Log(other.gameObject.tag);
-        if (other.gameObject.tag == "Enemy") {
+        if (other.gameObject.tag == "Enemy" && player.hitCooldown) {
             if (swordHit.isPlaying)
             {
                 swordHit.Stop();
