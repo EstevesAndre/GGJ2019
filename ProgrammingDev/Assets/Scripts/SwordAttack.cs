@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class SwordAttack : MonoBehaviour
 {
+    [SerializeField] private Player player;
     private float playerDamage;
     private AudioSource swordHit;
     // Start is called before the first frame update
@@ -14,7 +15,7 @@ public class SwordAttack : MonoBehaviour
 
     }
 
-    private void OnCollisionEnter(Collision other)
+    private void OnCollisionStay(Collision other)
     {
         //Debug.Log(other.gameObject.tag);
         if (other.gameObject.tag == "Enemy") {
@@ -26,4 +27,6 @@ public class SwordAttack : MonoBehaviour
             swordHit.Play(0);
         }
     }
+
+    
 }

@@ -6,8 +6,9 @@ public class Player : MonoBehaviour
 {
     public float health = 100f;
     public float damage = 10f;
+    public float swingCooldown = 1f;
 
-    private bool hitCooldown = false;
+    public bool hitCooldown = false;
     private Animator anim;
     private AudioSource swordMiss;
     // Start is called before the first frame update
@@ -20,7 +21,7 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Fire1") && !hitCooldown)
         {
             if (swordMiss.isPlaying)
             {
@@ -28,6 +29,7 @@ public class Player : MonoBehaviour
             }
             
             anim.SetTrigger("Attack");
+            StartCoroutine("SwingCooldown");
             //Debug.Log("animation called");
             swordMiss.Play(0);
         }
@@ -44,5 +46,11 @@ public class Player : MonoBehaviour
     void Die() {
         //TODO: Play animation
         //TODO: Play sound
+    }
+
+    IEnumerator SwingCooldown() {
+        hitCooldown = true;
+        yield return new WaitForSeconds(swingCooldown);
+        hitCooldown = false;
     }
 }
