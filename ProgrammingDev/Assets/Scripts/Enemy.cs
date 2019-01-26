@@ -18,6 +18,7 @@ public class Enemy : MonoBehaviour
     void Start()
     {
         agent = this.gameObject.GetComponent<NavMeshAgent>();
+        player = GameObject.FindGameObjectWithTag("Player");
         playerScript = player.GetComponent<Player>();
     }
 
@@ -44,6 +45,8 @@ public class Enemy : MonoBehaviour
     void Die() {
         //TODO: Play animation
         //TODO: Play sound
+        Debug.Log("Dead!");
+        Destroy(gameObject);
     }
 
     IEnumerator HitCooldown() {
