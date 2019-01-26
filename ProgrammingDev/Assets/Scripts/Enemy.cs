@@ -23,9 +23,12 @@ public class Enemy : MonoBehaviour
 
     private void Update()
     {
-        agent.SetDestination(player.transform.position);
         Vector3 vec = this.gameObject.transform.position - player.transform.position;
-        if (!hitCooldown && vec.magnitude < 2.0f) {
+        if (vec.magnitude >= 2.0f)
+        {
+            agent.SetDestination(player.transform.position);
+        }
+        else if (!hitCooldown) {
             playerScript.OnHit(damage);
             StartCoroutine("HitCooldown");
         }
