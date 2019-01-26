@@ -36,10 +36,15 @@ public class Enemy : MonoBehaviour
     private void Update()
     {
         Vector3 vec = this.gameObject.transform.position - player.transform.position;
+        Vector3 vecGate = transform.position - target.position;
         transform.LookAt(player.transform);
 
         if (vec.magnitude >= pursuitRange) {
-            agent.SetDestination(target.position);
+            if (vecGate.magnitude >= hitReach)
+                agent.SetDestination(target.position);
+            else {
+                //TODO: damage the walls
+            }
         }
         else if (vec.magnitude >= hitReach)
         {            
