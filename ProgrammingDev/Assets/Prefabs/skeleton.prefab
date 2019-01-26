@@ -1114,7 +1114,7 @@ MonoBehaviour:
   hitCoolTime: 1
   rotationSpeed: 10
   hitReach: 1
-  pursuitRange: 5
+  pursuitRange: 6
 --- !u!195 &3927203546645493565
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -2367,17 +2367,17 @@ PrefabInstance:
     - target: {fileID: 3838910985583675205, guid: fe911dde984a0e74f8dcd65682d2615f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.068
+      value: -0.081
       objectReference: {fileID: 0}
     - target: {fileID: 3838910985583675205, guid: fe911dde984a0e74f8dcd65682d2615f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0
+      value: -0.0267
       objectReference: {fileID: 0}
     - target: {fileID: 3838910985583675205, guid: fe911dde984a0e74f8dcd65682d2615f,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.42
+      value: -0.3465
       objectReference: {fileID: 0}
     - target: {fileID: 3838910985583675205, guid: fe911dde984a0e74f8dcd65682d2615f,
         type: 3}
@@ -2422,17 +2422,22 @@ PrefabInstance:
     - target: {fileID: 3838910985583675205, guid: fe911dde984a0e74f8dcd65682d2615f,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.3
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 3838910985583675205, guid: fe911dde984a0e74f8dcd65682d2615f,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.3
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 3838910985583675205, guid: fe911dde984a0e74f8dcd65682d2615f,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.3
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 141631282778192160, guid: fe911dde984a0e74f8dcd65682d2615f,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe911dde984a0e74f8dcd65682d2615f, type: 3}

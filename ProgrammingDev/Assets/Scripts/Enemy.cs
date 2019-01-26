@@ -37,7 +37,7 @@ public class Enemy : MonoBehaviour
     {
         Vector3 vec = this.gameObject.transform.position - player.transform.position;
         Vector3 vecGate = transform.position - target.position;
-        transform.LookAt(player.transform);
+        // transform.LookAt(player.transform);
 
         if (vec.magnitude >= pursuitRange) {
             if (vecGate.magnitude >= hitReach)
