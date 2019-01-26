@@ -24,7 +24,7 @@ public class Spawner : MonoBehaviour
 
     IEnumerator SpawnEnemies() {
         while (active) {
-            GameObject enemyGO = Instantiate(enemy, this.transform.position, this.transform.rotation, enemyFolder);
+            GameObject enemyGO = Instantiate(enemy, this.transform.position + new Vector3(0, 0, Random.Range(-1f, 1f)), this.transform.rotation, enemyFolder);
             enemyGO.GetComponent<Enemy>().SetTarget(targetPosition);
             yield return new WaitForSeconds(Random.Range(minSpawnPerSec, maxSpawnPerSec));
         }
