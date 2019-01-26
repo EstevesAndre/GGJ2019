@@ -14,7 +14,7 @@ public class Attack : MonoBehaviour
 
     public void DoesAttack()
     {
-        //anim.SetTrigger("Attack");
+        anim.SetTrigger("Attack");
     }
 
 }

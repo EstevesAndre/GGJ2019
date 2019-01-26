@@ -28,10 +28,7 @@ public class Enemy : MonoBehaviour
     private void Update()
     {
         Vector3 vec = this.gameObject.transform.position - player.transform.position;
-        transform.LookAt(player.transform.position);
-        Quaternion q = transform.rotation;
-        q.eulerAngles = new Vector3 (0f, transform.rotation.eulerAngles.y, 0f);
-        transform.rotation = q;
+        transform.LookAt(player.transform);
 
         if (vec.magnitude >= 2.0f)
         {            
@@ -39,7 +36,7 @@ public class Enemy : MonoBehaviour
         }
         else if (!hitCooldown)
         {
-           // swordScript.DoesAttack();
+            swordScript.DoesAttack();
             playerScript.OnHit(damage);
             StartCoroutine("HitCooldown");
         }
