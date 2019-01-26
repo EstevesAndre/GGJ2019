@@ -9,11 +9,12 @@ public class Player : MonoBehaviour
 
     private bool hitCooldown = false;
     private Animator anim;
-
+    private AudioSource swordMiss;
     // Start is called before the first frame update
     void Start()
     {
         anim = GetComponent<Animator>();
+        swordMiss = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -21,8 +22,14 @@ public class Player : MonoBehaviour
     {
         if (Input.GetButtonDown("Fire1"))
         {
+            if (swordMiss.isPlaying)
+            {
+                swordMiss.Stop();
+            }
+            
             anim.SetTrigger("Attack");
             //Debug.Log("animation called");
+            swordMiss.Play(0);
         }
     }
 
