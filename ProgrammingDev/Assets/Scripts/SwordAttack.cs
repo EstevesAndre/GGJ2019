@@ -4,18 +4,22 @@ using UnityEngine;
 
 public class SwordAttack : MonoBehaviour
 {
+    [SerializeField] private Player player;
     private float playerDamage;
     // Start is called before the first frame update
     void Start()
     {
-        playerDamage = GetComponentInParent<Player>().damage;
+        player = GetComponentInParent<Player>();
+        playerDamage = player.damage;
     }
 
-    private void OnCollisionEnter(Collision other)
+    private void OnCollisionStay(Collision other)
     {
-        //Debug.Log(other.gameObject.tag);
-        if (other.gameObject.tag == "Enemy") {
+        Debug.Log(other.gameObject.tag + " " + player.hitCooldown);
+        if (other.gameObject.tag == "Enemy" && player.hitCooldown) {
             other.gameObject.GetComponent<Enemy>().OnHit(playerDamage);
         }
     }
+
+    
 }

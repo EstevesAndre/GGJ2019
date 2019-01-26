@@ -29,7 +29,7 @@ public class Arrow : MonoBehaviour
     void OnCollisionEnter(Collision other)
     {
         rb.velocity = Vector3.zero;
-        rb.constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ;
+        rb.constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ;
 
         if(other.gameObject.tag == "Enemy")
         {
