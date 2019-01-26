@@ -8,6 +8,7 @@ public class Spawner : MonoBehaviour
     public float minSpawnPerSec = 0.3f;
     public float maxSpawnPerSec = 2f;
     public Transform enemyFolder;
+    public Transform targetPosition;
     private bool active = true;
 
     // Start is called before the first frame update
@@ -23,7 +24,8 @@ public class Spawner : MonoBehaviour
 
     IEnumerator SpawnEnemies() {
         while (active) {
-            Instantiate(enemy, this.transform.position, this.transform.rotation, enemyFolder);
+            GameObject enemyGO = Instantiate(enemy, this.transform.position, this.transform.rotation, enemyFolder);
+            enemyGO.GetComponent<Enemy>().SetTarget(targetPosition);
             yield return new WaitForSeconds(Random.Range(minSpawnPerSec, maxSpawnPerSec));
         }
     }

@@ -9,11 +9,16 @@ public class Enemy : MonoBehaviour
     public float damage = 10f;
     public GameObject player;
     public float hitCoolTime = 1f;
+    public float rotationSpeed = 10f;
+
+    public float hitReach = 2.0f;
+    public float pursuitRange = 4.0f;
 
     private NavMeshAgent agent;
     private Player playerScript;
     private bool hitCooldown = false;
     private Attack swordScript;
+    private Transform target;
 
     // Start is called before the first frame update
     void Start()
@@ -24,24 +29,32 @@ public class Enemy : MonoBehaviour
         playerScript = player.GetComponent<Player>();
     }
 
+    public void SetTarget(Transform _target) {
+        target = _target;
+    }
+
     private void Update()
     {
         Vector3 vec = this.gameObject.transform.position - player.transform.position;
-        transform.LookAt(player.transform.position);
+        transform.LookAt(player.transform);
 
-        if (vec.magnitude >= 2.0f)
+        if (vec.magnitude >= pursuitRange) {
+            agent.SetDestination(target.position);
+        }
+        else if (vec.magnitude >= hitReach)
         {            
             agent.SetDestination(player.transform.position);
         }
         else if (!hitCooldown)
         {
-           // swordScript.DoesAttack();
+            swordScript.DoesAttack();
             playerScript.OnHit(damage);
             StartCoroutine("HitCooldown");
         }
     }
 
     public void OnHit(float rec_damage) {
+        Debug.Log("Enemy Hit for " + rec_damage + ". Initial Health: " + health);
         health -= rec_damage;
         if (health <= 0) {
             Die();
