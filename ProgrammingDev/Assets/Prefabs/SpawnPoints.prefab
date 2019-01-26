@@ -47,6 +47,7 @@ MonoBehaviour:
   minSpawnPerSec: 0.3
   maxSpawnPerSec: 2
   enemyFolder: {fileID: 0}
+  targetPosition: {fileID: 0}
 --- !u!1 &2203695978671087465
 GameObject:
   m_ObjectHideFlags: 0
@@ -94,6 +95,7 @@ MonoBehaviour:
   minSpawnPerSec: 0.3
   maxSpawnPerSec: 2
   enemyFolder: {fileID: 0}
+  targetPosition: {fileID: 0}
 --- !u!1 &2203695979038238404
 GameObject:
   m_ObjectHideFlags: 0
@@ -174,3 +176,4 @@ MonoBehaviour:
   minSpawnPerSec: 0.3
   maxSpawnPerSec: 2
   enemyFolder: {fileID: 0}
+  targetPosition: {fileID: 0}
