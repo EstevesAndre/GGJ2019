@@ -10,7 +10,8 @@ public class SwordAttack : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        playerDamage = GetComponentInParent<Player>().damage;
+        player = GetComponentInParent<Player>();
+        playerDamage = player.damage;
         swordHit = GetComponent<AudioSource>();
 
     }
