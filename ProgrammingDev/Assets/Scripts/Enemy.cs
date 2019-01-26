@@ -35,7 +35,7 @@ public class Enemy : MonoBehaviour
         }
         else if (!hitCooldown)
         {
-            swordScript.DoesAttack();
+           // swordScript.DoesAttack();
             playerScript.OnHit(damage);
             StartCoroutine("HitCooldown");
         }
