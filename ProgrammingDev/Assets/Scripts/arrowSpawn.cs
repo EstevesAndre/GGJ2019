@@ -32,8 +32,15 @@ public class arrowSpawn : MonoBehaviour
 
                 GameObject go = Instantiate(arrow, vetc, transform.rotation, this.transform);
                 go.GetComponent<Arrow>().StartForce(side);
+                go.GetComponent<Arrow>().sendSpawn(this);
             }
         }
+    }
+
+    public void removeOneArrow()
+    {
+        arrowsSpawned--;
+        Debug.Log(arrowsSpawned);
     }
 
     // Update is called once per frame
