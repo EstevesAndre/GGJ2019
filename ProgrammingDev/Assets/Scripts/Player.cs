@@ -7,8 +7,11 @@ public class Player : MonoBehaviour
     public float health = 100f;
     public float damage = 10f;
     public float swingCooldown = 1f;
-
     public bool hitCooldown = false;
+
+public float castleMaxHealth = 1000f;
+public float castleHealth = 1000f;
+
     private Animator anim;
     private AudioSource swordMiss;
     // Start is called before the first frame update
@@ -16,6 +19,7 @@ public class Player : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         swordMiss = GetComponent<AudioSource>();
+        castleHealth = castleMaxHealth;
     }
 
     // Update is called once per frame
@@ -40,6 +44,14 @@ public class Player : MonoBehaviour
         health -= rec_damage;
         if (health <= 0) {
             Die();
+        }
+    }
+
+    public void CastleHit(float rec_damage) {
+        Debug.Log("Castle Hit");
+        health -= rec_damage;
+        if (health <= 0) {
+            Die();              // Necessary?
         }
     }
 

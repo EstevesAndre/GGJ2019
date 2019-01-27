@@ -43,6 +43,7 @@ public class Enemy : MonoBehaviour
         Vector3 vec = this.gameObject.transform.position - player.transform.position;
         Vector3 vecGate = transform.position - target.position;
 
+        //TODO: For Matrix Hard Mode enable this line
         // transform.LookAt(player.transform);
 
         if (vec.magnitude >= pursuitRange) {
@@ -50,7 +51,7 @@ public class Enemy : MonoBehaviour
                 agent.SetDestination(target.position);
             else {
                 anim.SetTrigger("Melee");
-                //TODO: damage the walls
+                playerScript.CastleHit(damage);
             }
         }
         else if (vec.magnitude >= hitReach)
