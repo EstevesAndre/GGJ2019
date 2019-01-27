@@ -7,24 +7,26 @@ public class Enemy : MonoBehaviour
 {
     public float health = 100f;
     public float damage = 10f;
-    public GameObject player;
+    private GameObject player;
     public float hitCoolTime = 1f;
     public float rotationSpeed = 10f;
 
     public float hitReach = 2.0f;
     public float pursuitRange = 4.0f;
+    public float corpseTime = 10f;
 
     private NavMeshAgent agent;
     private Player playerScript;
     private bool hitCooldown = false;
-    private Attack swordScript;
+    // private Attack swordScript;
     private Transform target;
     private Animator anim;
+    private bool dead = false;
 
     // Start is called before the first frame update
     void Start()
     {
-        swordScript = GetComponentInChildren<Attack>();
+        // swordScript = GetComponentInChildren<Attack>();
         agent = this.gameObject.GetComponent<NavMeshAgent>();
         player = GameObject.FindGameObjectWithTag("Player");
         playerScript = player.GetComponent<Player>();
@@ -37,8 +39,10 @@ public class Enemy : MonoBehaviour
 
     private void Update()
     {
+        if (dead) return;
         Vector3 vec = this.gameObject.transform.position - player.transform.position;
         Vector3 vecGate = transform.position - target.position;
+
         // transform.LookAt(player.transform);
 
         if (vec.magnitude >= pursuitRange) {
@@ -56,7 +60,7 @@ public class Enemy : MonoBehaviour
         else if (!hitCooldown)
         {
             anim.SetTrigger("Melee");
-            swordScript.DoesAttack();
+            // swordScript.DoesAttack();
             playerScript.OnHit(damage);
             StartCoroutine("HitCooldown");
         }
@@ -68,7 +72,7 @@ public class Enemy : MonoBehaviour
         if (health <= 0) {
             Die();
         } else {
-
+            //TODO: got hit but not dead animation.
         }
     }
 
@@ -76,7 +80,13 @@ public class Enemy : MonoBehaviour
         anim.SetTrigger("Death");
         //TODO: Play sound
         Debug.Log("Dead!");
-        Destroy(gameObject);
+        dead = true;
+        Rigidbody dead_rb = GetComponent<Rigidbody>();
+        dead_rb.velocity = Vector3.zero;
+        dead_rb.angularVelocity = Vector3.zero;
+        GetComponent<NavMeshAgent>().enabled = false;
+        GetComponent<CapsuleCollider>().enabled = false;
+        StartCoroutine("CorpseVanish");
     }
 
     IEnumerator HitCooldown() {
@@ -85,4 +95,8 @@ public class Enemy : MonoBehaviour
         hitCooldown = false;
     }
 
+    IEnumerator CorpseVanish() {
+        yield return new WaitForSeconds(corpseTime);
+        Destroy(gameObject);
+    }
 }

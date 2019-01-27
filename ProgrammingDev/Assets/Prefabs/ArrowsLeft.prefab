@@ -43,7 +43,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4abae2d3a3554fe4a938e2f1eb2472a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnTime: 0.6
+  spawnTime: 2
   arrow: {fileID: 1561910215, guid: 25485193a11773844b8cff4199a1b54d, type: 3}
-  arrowsLimit: 500
+  arrowsLimit: 100
   side: 1
+  repeatSoundTime: 100
