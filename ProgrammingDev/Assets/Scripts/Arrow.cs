@@ -40,14 +40,13 @@ public class Arrow : MonoBehaviour
 
         if (other.gameObject.tag == "Enemy")
         {
-            DestroyObject();
             other.gameObject.GetComponent<Enemy>().OnHit(arrowDamage);
+            DestroyObject();
         }
         else if (other.gameObject.tag == "Player")
         {
-            Debug.Log("HERE");
-            DestroyObject();
             other.gameObject.GetComponentInChildren<Player>().OnHit(arrowDamage);
+            DestroyObject();
         }       
     }
 

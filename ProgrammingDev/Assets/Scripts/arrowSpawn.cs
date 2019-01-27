@@ -11,7 +11,7 @@ public class arrowSpawn : MonoBehaviour
     public int arrowsLimit;
     public int side;
     private AudioSource war;
-    public float repeatSoundTime = 60f;
+    public float repeatSoundTime;
 
     // Start is called before the first frame update
     void Start()
@@ -22,7 +22,7 @@ public class arrowSpawn : MonoBehaviour
 
     void Spawn()
     {
-        for (int i = 0; i < 6; i++)
+        for (int i = 0; i < 5; i++)
         {
             if (arrowsSpawned < arrowsLimit)
             {
@@ -43,7 +43,6 @@ public class arrowSpawn : MonoBehaviour
     public void removeOneArrow()
     {
         arrowsSpawned--;
-        Debug.Log(arrowsSpawned);
     }
 
     public void PlayWarSound()
