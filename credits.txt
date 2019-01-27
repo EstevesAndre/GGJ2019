@@ -1,0 +1,44 @@
+<size=20><b>Programming</b></size>
+
+<color=#0F0F0F><size=17><b>Gameplay Systems</b></size></color>
+
+<color=#191919><size=15><b>Combat System</b></size>
+
+<size=15><b>Enemy AI</b></size></color>
+
+<color=#0F0F0F><size=17><b>Worldbuilding Mechanics</b></size></color>
+
+<color=#191919><size=15><b>Day & Night Cycles</b></size>
+
+<size=15><b>Ambience</b></size></color>
+
+
+<size=20><b>3D Modeling</b></size>
+
+
+<size=20><b>Animation</b></size>
+
+
+<size=20><b>Texturing and Materials</b></size>
+
+
+<size=20><b>Audio</b></size>
+
+<color=#0F0F0F><size=17><b>Soundtrack</b></size>
+
+<size=17><b>Sound Effects</b></size></color>
+
+
+<size=20><b>Level Design</b></size>
+
+
+<size=20><b>UI Design</b></size>
+
+
+<size=20><b>External Sources</b></size>
+
+
+<size=20><b>The Team</b></size>
+
+
+<size=20><b>Acknowledgements</b></size>
