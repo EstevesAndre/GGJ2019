@@ -10,11 +10,14 @@ public class arrowSpawn : MonoBehaviour
     private int arrowsSpawned;
     public int arrowsLimit;
     public int side;
+    private AudioSource war;
+    public float repeatSoundTime = 60f;
 
     // Start is called before the first frame update
     void Start()
     {
         InvokeRepeating("Spawn", spawnTime, spawnTime);
+        InvokeRepeating("PlayWarSound", spawnTime, repeatSoundTime);
     }
 
     void Spawn()
@@ -41,6 +44,12 @@ public class arrowSpawn : MonoBehaviour
     {
         arrowsSpawned--;
         Debug.Log(arrowsSpawned);
+    }
+
+    public void PlayWarSound()
+    {
+        war = GetComponent<AudioSource>();
+        war.Play(0);
     }
 
     // Update is called once per frame

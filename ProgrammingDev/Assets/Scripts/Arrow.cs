@@ -9,11 +9,13 @@ public class Arrow : MonoBehaviour
     public int arrowDamage;
     public float lifetime;
     private arrowSpawn arrowSp;
+    private AudioSource javelin;
 
     // Start is called before the first frame update
     void Start()
     {
         Invoke("DestroyObject", lifetime);
+        javelin = GetComponent<AudioSource>();
     }
 
     public void StartForce(int side)
@@ -33,6 +35,8 @@ public class Arrow : MonoBehaviour
     {
         rb.velocity = Vector3.zero;
         rb.constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ;
+
+        javelin.Play(0);
 
         if (other.gameObject.tag == "Enemy")
         {
