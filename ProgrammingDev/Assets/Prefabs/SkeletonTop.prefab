@@ -79,7 +79,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 10
   damage: 10
-  player: {fileID: 0}
   hitCoolTime: 1
   rotationSpeed: 10
   hitReach: 1
@@ -172,6 +171,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6877522416370753143, guid: 410155674c1298c4b9502053a62869d9,
+        type: 3}
+      propertyPath: m_WarningMessage
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 2427789342773738679, guid: 410155674c1298c4b9502053a62869d9,
         type: 3}
@@ -433,7 +437,8 @@ PrefabInstance:
       propertyPath: m_RootBone
       value: 
       objectReference: {fileID: 6240946163158494413}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2320256717752926714, guid: 410155674c1298c4b9502053a62869d9, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 410155674c1298c4b9502053a62869d9, type: 3}
 --- !u!4 &4094765159769065681 stripped
 Transform:

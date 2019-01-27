@@ -7,7 +7,7 @@ public class Enemy : MonoBehaviour
 {
     public float health = 100f;
     public float damage = 10f;
-    public GameObject player;
+    private GameObject player;
     public float hitCoolTime = 1f;
     public float rotationSpeed = 10f;
 
@@ -39,6 +39,7 @@ public class Enemy : MonoBehaviour
     {
         Vector3 vec = this.gameObject.transform.position - player.transform.position;
         Vector3 vecGate = transform.position - target.position;
+
         // transform.LookAt(player.transform);
 
         if (vec.magnitude >= pursuitRange) {
