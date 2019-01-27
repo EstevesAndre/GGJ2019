@@ -44,9 +44,13 @@ public class ButtonHandler : MonoBehaviour
     public void mainMenu()
     {
         StartCoroutine("DelayedMainMenu");
-        MouseLook cam = GameObject.Find("FPSController").GetComponent<FirstPersonController>().m_MouseLook;
-        Time.timeScale = 1f;
-        cam.XSensitivity = 2; cam.YSensitivity = 2; cam.lockCursor = false;
+        try
+        {
+            MouseLook cam = GameObject.Find("FPSController").GetComponent<FirstPersonController>().m_MouseLook;
+            Time.timeScale = 1f;
+            cam.XSensitivity = 2; cam.YSensitivity = 2; cam.lockCursor = false;
+        }
+        catch { }
         Color black = blackScreen.color;
         black.a = 1;
         blackScreen.color = black;
