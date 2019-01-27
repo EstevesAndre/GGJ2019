@@ -790,7 +790,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000030517578, y: 0.000015258789}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &965285465
@@ -1568,15 +1568,48 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "<size=20><b>Programming</b></size>\r\n\r\n<color=#0F0F0F><size=17><b>Gameplay
-    Systems</b></size></color>\r\n\r\n<color=#191919><size=15><b>Combat System</b></size>\r\n\r\n<size=15><b>Enemy
-    AI</b></size></color>\r\n\r\n<color=#0F0F0F><size=17><b>Worldbuilding Mechanics</b></size></color>\r\n\r\n<color=#191919><size=15><b>Day
-    & Night Cycles</b></size>\r\n\r\n<size=15><b>Ambience</b></size></color>\r\n\r\n\r\n<size=20><b>3D
-    Modeling</b></size>\r\n\r\n\r\n<size=20><b>Animation</b></size>\r\n\r\n\r\n<size=20><b>Texturing
-    and Materials</b></size>\r\n\r\n\r\n<size=20><b>Audio</b></size>\r\n\r\n<color=#0F0F0F><size=17><b>Soundtrack</b></size>\r\n\r\n<size=17><b>Sound
-    Effects</b></size></color>\r\n\r\n\r\n<size=20><b>Level Design</b></size>\r\n\r\n\r\n<size=20><b>UI
-    Design</b></size>\r\n\r\n\r\n<size=20><b>External Sources</b></size>\r\n\r\n\r\n<size=20><b>The
-    Team</b></size>\r\n\r\n\r\n<size=20><b>Acknowledgements</b></size>"
+  m_Text: "<size=20><b>Programming</b></size>\r\n\r\n\r\n<color=#0F0F0F><size=17><b>Gameplay
+    Systems</b></size></color>\r\n\r\n<color=#191919><size=15><b>Combat System</b></size></color>\r\n<color=#242424><size=12><b>Ricardo
+    Teixeira</b></size></color>\r\n\r\n<color=#191919><size=15><b>Enemy AI</b></size></color>\r\n<color=#242424><size=12><b>Ricardo
+    Teixeira</b></size></color>\r\n\r\n\r\n<color=#0F0F0F><size=17><b>Worldbuilding
+    Mechanics</b></size></color>\r\n\r\n<color=#191919><size=15><b>Day & Night Cycles</b></size></color>\r\n<color=#242424><size=12><b>Vasco
+    Rocha</b></size></color>\r\n\r\n<color=#191919><size=15><b>Ambience</b></size></color>\r\n<color=#242424><size=12><b>Andr\xE9
+    Esteves</b></size></color>\r\n<color=#242424><size=12><b>Andr\xE9 S\xE1</b></size></color>\r\n<color=#242424><size=12><b>Vasco
+    Rocha</b></size></color>\r\n\r\n\r\n<size=20><b>3D Modeling</b></size>\r\n<color=#242424><size=12><b>Andr\xE9
+    S\xE1</b></size></color>\r\n<color=#242424><size=12><b>Ricardo Carvalho</b></size></color>\r\n<color=#242424><size=12><b>Rita
+    Duarte</b></size></color>\r\n<color=#242424><size=12><b>Sim\xE3o Silva</b></size></color>\r\n\r\n\r\n<size=20><b>Animation</b></size>\r\n<color=#242424><size=12><b>Andr\xE9
+    Esteves</b></size></color>\r\n<color=#242424><size=12><b>Ricardo Carvalho</b></size></color>\r\n<color=#242424><size=12><b>Vasco
+    Rocha</b></size></color>\r\n\r\n\r\n<size=20><b>Texturing and Materials</b></size>\r\n<color=#242424><size=12><b>Andr\xE9
+    S\xE1</b></size></color>\r\n<color=#242424><size=12><b>Ricardo Carvalho</b></size></color>\r\n<color=#242424><size=12><b>Rita
+    Duarte</b></size></color>\r\n<color=#242424><size=12><b>Sim\xE3o Silva</b></size></color>\r\n\r\n\r\n<size=20><b>Audio</b></size>\r\n\r\n<color=#0F0F0F><size=17><b>Soundtrack</b></size></color>\r\n<color=#242424><size=12><b>Lu\xEDs
+    Silva</b></size></color>\r\n<color=#242424><size=12><b>Vasco Rocha</b></size></color>\r\n\r\n<color=#0F0F0F><size=17><b>Sound
+    Effects</b></size></color>\r\n<color=#242424><size=12><b>Lu\xEDs Silva</b></size></color>\r\n<color=#242424><size=12><b>Vasco
+    Rocha</b></size></color>\r\n\r\n\r\n<size=20><b>Level Design</b></size>\r\n<color=#242424><size=12><b>Andr\xE9
+    S\xE1</b></size></color>\r\n\r\n\r\n<size=20><b>UI Design</b></size>\r\n\r\n<color=#0F0F0F><size=17><b>Menus</b></size></color>\r\n<color=#242424><size=12><b>Lu\xEDs
+    Silva</b></size></color>\r\n\r\n<color=#0F0F0F><size=17><b>In-Game UI</b></size></color>\r\n<color=#242424><size=12><b>Ricardo
+    Carvalho</b></size></color>\r\n\r\n\r\n<size=20><b>External Sources</b></size>\r\n\r\n<color=#0F0F0F><size=17><b>Medieval
+    Combat Soundpack</b></size></color>\r\n<color=#191919><size=15><b>Developed by
+    Yap Studio Production</b></size></color>\r\n<color=#242424><size=12><b>Modified</b></size></color>\r\n<color=#242424><size=12><b>Available
+    at freesound.org/people/Yap_Audio_Production/packs/13842/</b></size></color>\r\n\r\n<color=#0F0F0F><size=17><b>Artillery
+    Explosion (Close) (Mixed) Sound</b></size></color>\r\n<color=#191919><size=15><b>Developed
+    by EFlexMusic</b></size></color>\r\n<color=#242424><size=12><b>Available at freesound.org/people/EFlexMusic</b></size></color>\r\n\r\n\r\n<color=#0F0F0F><size=17><b>Flying
+    Back Death Animation</b></size></color>\r\n<color=#191919><size=15><b>Developed
+    by Abode</b></size></color>\r\n<color=#242424><size=12><b>Available at mixamo.com</b></size></color>\r\n\r\n<color=#0F0F0F><size=17><b>Unarmed
+    Walk Forward Animation</b></size></color>\r\n<color=#191919><size=15><b>Developed
+    by Abode</b></size></color>\r\n<color=#242424><size=12><b>Available at mixamo.com</b></size></color>\r\n\r\n<color=#0F0F0F><size=17><b>Standing
+    Melee Attack Downward Animation</b></size></color>\r\n<color=#191919><size=15><b>Developed
+    by Abode</b></size></color>\r\n<color=#242424><size=12><b>Available at mixamo.com</b></size></color>\r\n\r\n\r\n<color=#0F0F0F><size=17><b>Medieval
+    Victoriana Font</b></size></color>\r\n<color=#191919><size=15><b>Developed by
+    Paul Lloyd</b></size></color>\r\n<color=#242424><size=12><b>Available at dafont.com/medieval-victoriana.font</b></size></color>\r\n\r\n<color=#0F0F0F><size=17><b>MedievalSharp
+    Font</b></size></color>\r\n<color=#191919><size=15><b>Developed by Wojciech Kalinowski</b></size></color>\r\n<color=#242424><size=12><b>Available
+    at fonts.google.com/specimen/MedievalSharp</b></size></color>\r\n\r\n\r\n<color=#0F0F0F><size=17><b>Skeleton
+    - PBR - Animated Low Poly Free low-poly 3D Model</b></size></color>\r\n<color=#191919><size=15><b>Developed
+    by lugiagames</b></size></color>\r\n<color=#242424><size=12><b>Available at cgtrader.com</b></size></color>\r\n\r\n\r\n\r\n<size=20><b>The
+    Team</b></size>\r\n\r\n<color=#242424><size=12><b>Andr\xE9 Esteves</b></size></color>\r\n<color=#242424><size=12><b>Andr\xE9
+    S\xE1</b></size></color>\r\n<color=#242424><size=12><b>Lu\xEDs Silva</b></size></color>\r\n<color=#242424><size=12><b>Ricardo
+    Carvalho</b></size></color>\r\n<color=#242424><size=12><b>Ricardo Teixeira</b></size></color>\r\n<color=#242424><size=12><b>Rita
+    Duarte</b></size></color>\r\n<color=#242424><size=12><b>Sim\xE3o Silva</b></size></color>\r\n<color=#242424><size=12><b>Vasco
+    Rocha</b></size></color>\r\n\r\n\r\n\r\n<size=20><b>Acknowledgements</b></size>"
 --- !u!222 &2056468062
 CanvasRenderer:
   m_ObjectHideFlags: 0
