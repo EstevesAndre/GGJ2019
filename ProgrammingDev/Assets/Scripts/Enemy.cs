@@ -19,6 +19,7 @@ public class Enemy : MonoBehaviour
     private bool hitCooldown = false;
     private Attack swordScript;
     private Transform target;
+    private Animator anim;
 
     // Start is called before the first frame update
     void Start()
@@ -27,6 +28,7 @@ public class Enemy : MonoBehaviour
         agent = this.gameObject.GetComponent<NavMeshAgent>();
         player = GameObject.FindGameObjectWithTag("Player");
         playerScript = player.GetComponent<Player>();
+        anim = GetComponentInChildren<Animator>();
     }
 
     public void SetTarget(Transform _target) {
@@ -43,6 +45,7 @@ public class Enemy : MonoBehaviour
             if (vecGate.magnitude >= hitReach)
                 agent.SetDestination(target.position);
             else {
+                anim.SetTrigger("Melee");
                 //TODO: damage the walls
             }
         }
@@ -52,6 +55,7 @@ public class Enemy : MonoBehaviour
         }
         else if (!hitCooldown)
         {
+            anim.SetTrigger("Melee");
             swordScript.DoesAttack();
             playerScript.OnHit(damage);
             StartCoroutine("HitCooldown");
@@ -63,11 +67,13 @@ public class Enemy : MonoBehaviour
         health -= rec_damage;
         if (health <= 0) {
             Die();
+        } else {
+
         }
     }
 
     void Die() {
-        //TODO: Play animation
+        anim.SetTrigger("Death");
         //TODO: Play sound
         Debug.Log("Dead!");
         Destroy(gameObject);
