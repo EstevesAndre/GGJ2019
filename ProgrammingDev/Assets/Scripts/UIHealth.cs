@@ -8,21 +8,20 @@ public class UIHealth : MonoBehaviour
 
     public Image greenHealth;
     public Image redHealth;
-    public Player player;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public GameObject player;
+	private Player pl;
 
-    // Update is called once per frame
+	void Start() {
+		pl = player.GetComponent<Player>();
+	}
+
     void Update()
     {
         SetLife();
     }
 
     void SetLife() {
-        redHealth.fillAmount = player.health * 0.01f;
-        greenHealth.fillAmount = player.castleHealth / player.castleMaxHealth;
+        redHealth.fillAmount = pl.health * 0.01f;
+        greenHealth.fillAmount = pl.castleHealth / pl.castleMaxHealth;
     }
 }

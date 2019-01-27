@@ -1617,12 +1617,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 10
-  damage: 10
+  damage: 1
   hitCoolTime: 1
   rotationSpeed: 10
-  hitReach: 2
-  pursuitRange: 6
-  corpseTime: 10
+  hitReach: 3
+  pursuitRange: 7
+  corpseTime: 6
 --- !u!195 &7837779024621273979
 NavMeshAgent:
   m_ObjectHideFlags: 0

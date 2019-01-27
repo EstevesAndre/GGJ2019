@@ -50,6 +50,7 @@ public class Enemy : MonoBehaviour
             if (vecGate.magnitude >= hitReach)
                 agent.SetDestination(target.position);
             else {
+                Debug.Log("Melee Castle");
                 anim.SetTrigger("Melee");
                 playerScript.CastleHit(damage);
             }
@@ -86,7 +87,7 @@ public class Enemy : MonoBehaviour
         dead_rb.velocity = Vector3.zero;
         dead_rb.angularVelocity = Vector3.zero;
         GetComponent<NavMeshAgent>().enabled = false;
-        GetComponent<CapsuleCollider>().enabled = false;
+        //GetComponent<CapsuleCollider>().enabled = false;
         StartCoroutine("CorpseVanish");
     }
 

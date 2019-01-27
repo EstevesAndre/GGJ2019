@@ -49,9 +49,9 @@ public float castleHealth = 1000f;
 
     public void CastleHit(float rec_damage) {
         Debug.Log("Castle Hit");
-        health -= rec_damage;
-        if (health <= 0) {
-            Die();              // Necessary?
+        castleHealth -= rec_damage;
+        if (castleHealth <= 0) {
+            DieCastle();              // Necessary?
         }
     }
 
@@ -59,6 +59,10 @@ public float castleHealth = 1000f;
         //TODO: Play animation
         //TODO: Play sound
     }
+
+void DieCastle() {
+        //TODO
+}
 
     IEnumerator SwingCooldown() {
         hitCooldown = true;
