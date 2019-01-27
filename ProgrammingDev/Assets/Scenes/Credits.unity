@@ -1609,7 +1609,11 @@ MonoBehaviour:
     S\xE1</b></size></color>\r\n<color=#242424><size=12><b>Lu\xEDs Silva</b></size></color>\r\n<color=#242424><size=12><b>Ricardo
     Carvalho</b></size></color>\r\n<color=#242424><size=12><b>Ricardo Teixeira</b></size></color>\r\n<color=#242424><size=12><b>Rita
     Duarte</b></size></color>\r\n<color=#242424><size=12><b>Sim\xE3o Silva</b></size></color>\r\n<color=#242424><size=12><b>Vasco
-    Rocha</b></size></color>\r\n\r\n\r\n\r\n<size=20><b>Acknowledgements</b></size>"
+    Rocha</b></size></color>\r\n\r\n\r\n\r\n<size=20><b>Acknowledgements</b></size>\r\n\r\n<color=#242424><size=12><b>Global
+    Game Jam</b></size></color>\r\n<color=#242424><size=12><b>NeCGM - N\xFAcleo Estudantil
+    de Computa\xE7\xE3o Gr\xE1fica e Multim\xE9dia</b></size></color>\r\n<color=#242424><size=12><b>FEUP
+    - Faculdade de Engenharia da Universidade do Porto</b></size></color>\r\n<color=#242424><size=12><b>GGJ2019
+    Community</b></size></color>"
 --- !u!222 &2056468062
 CanvasRenderer:
   m_ObjectHideFlags: 0
