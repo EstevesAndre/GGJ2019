@@ -43,7 +43,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b3e65209d78f504fa2a20d96f807e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 2643727786992893399, guid: 5a319d61ae370ad4684b224e76864498, type: 3}
+  enemy: {fileID: 5640206319064783777, guid: 4d162dc2ad68f7f458902a7e8a38f396, type: 3}
   minSpawnPerSec: 0.3
   maxSpawnPerSec: 2
   enemyFolder: {fileID: 0}
@@ -91,7 +91,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b3e65209d78f504fa2a20d96f807e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 2643727786992893399, guid: 5a319d61ae370ad4684b224e76864498, type: 3}
+  enemy: {fileID: 5640206319064783777, guid: 4d162dc2ad68f7f458902a7e8a38f396, type: 3}
   minSpawnPerSec: 0.3
   maxSpawnPerSec: 2
   enemyFolder: {fileID: 0}
@@ -172,7 +172,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b3e65209d78f504fa2a20d96f807e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 2643727786992893399, guid: 5a319d61ae370ad4684b224e76864498, type: 3}
+  enemy: {fileID: 5640206319064783777, guid: 4d162dc2ad68f7f458902a7e8a38f396, type: 3}
   minSpawnPerSec: 0.3
   maxSpawnPerSec: 2
   enemyFolder: {fileID: 0}

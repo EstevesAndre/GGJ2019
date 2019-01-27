@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class arrowSpawn : MonoBehaviour
 {
-    [SerializeField] float spawnTime;
+    [SerializeField] float spawnTime = 2f;
 
     public GameObject arrow;
     private int arrowsSpawned;
-    public int arrowsLimit;
-    public int side;
+    public int arrowsLimit = 100;
+    public int side = 1;
     private AudioSource war;
-    public float repeatSoundTime;
+    public float repeatSoundTime = 25f;
 
     // Start is called before the first frame update
     void Start()
