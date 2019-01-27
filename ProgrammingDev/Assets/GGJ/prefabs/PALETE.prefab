@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5268348675203010503}
   - component: {fileID: 7237686568646658578}
   - component: {fileID: 8721188354262291529}
+  - component: {fileID: 7242301847048922961}
   m_Layer: 0
   m_Name: PALETE
   m_TagString: Untagged
@@ -77,3 +78,16 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &7242301847048922961
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3628657209390615999}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.857042, y: 5.75554, z: 0.99835384}
+  m_Center: {x: 2.6252, y: -2.5827131, z: 0.49917692}

@@ -2103,6 +2103,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7202820265097451126}
+  - component: {fileID: 8879693361439751287}
   m_Layer: 0
   m_Name: tent_2
   m_TagString: Untagged
@@ -2150,6 +2151,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 1.0270001, y: 90.008, z: 90.00001}
+--- !u!65 &8879693361439751287
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4354939604419667940}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.3835552, y: 2.17432, z: 3.6963577}
+  m_Center: {x: 0.48362076, y: 0.017262569, z: -0.5542292}
 --- !u!1 &4490361504249740525
 GameObject:
   m_ObjectHideFlags: 0

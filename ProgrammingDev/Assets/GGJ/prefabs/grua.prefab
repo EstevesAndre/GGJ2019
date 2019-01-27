@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6832241127379773295}
+  - component: {fileID: 5883379297930688819}
   m_Layer: 0
   m_Name: grua
   m_TagString: Untagged
@@ -41,6 +42,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 90.00001, z: 0}
+--- !u!65 &5883379297930688819
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 235506641450922036}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.627903, y: 7.4277277, z: 7.501807}
+  m_Center: {x: 4.81155, y: 1.1202607, z: -0.45914793}
 --- !u!1 &691734848746899758
 GameObject:
   m_ObjectHideFlags: 0

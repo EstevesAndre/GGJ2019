@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8176892214494614656}
+  - component: {fileID: 3975809624067487138}
   m_Layer: 0
   m_Name: weapon_holder
   m_TagString: Untagged
@@ -33,6 +34,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &3975809624067487138
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 739732606917752811}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.4423704, y: 1.9884913, z: 0.5058237}
+  m_Center: {x: -0.053903732, y: -0.029069085, z: -8.185558}
 --- !u!1 &6571819750839574924
 GameObject:
   m_ObjectHideFlags: 0

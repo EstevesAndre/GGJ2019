@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5907971515742521766}
   - component: {fileID: 4444905742832542553}
   - component: {fileID: 3332943153499400948}
+  - component: {fileID: 5649592361816695187}
   m_Layer: 0
   m_Name: Torcha_com_base (1)
   m_TagString: Untagged
@@ -97,3 +98,16 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!65 &5649592361816695187
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6538910633667609711}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.282399, y: 0.2823991, z: 0.4974995}
+  m_Center: {x: 0, y: 0, z: 0.24874975}
