@@ -1,44 +1,126 @@
 <size=20><b>Programming</b></size>
 
+
 <color=#0F0F0F><size=17><b>Gameplay Systems</b></size></color>
 
-<color=#191919><size=15><b>Combat System</b></size>
+<color=#191919><size=15><b>Combat System</b></size></color>
+<color=#242424><size=12><b>Ricardo Teixeira</b></size></color>
 
-<size=15><b>Enemy AI</b></size></color>
+<color=#191919><size=15><b>Enemy AI</b></size></color>
+<color=#242424><size=12><b>Ricardo Teixeira</b></size></color>
+
 
 <color=#0F0F0F><size=17><b>Worldbuilding Mechanics</b></size></color>
 
-<color=#191919><size=15><b>Day & Night Cycles</b></size>
+<color=#191919><size=15><b>Day & Night Cycles</b></size></color>
+<color=#242424><size=12><b>Vasco Rocha</b></size></color>
 
-<size=15><b>Ambience</b></size></color>
+<color=#191919><size=15><b>Ambience</b></size></color>
+<color=#242424><size=12><b>André Esteves</b></size></color>
+<color=#242424><size=12><b>André Sá</b></size></color>
+<color=#242424><size=12><b>Vasco Rocha</b></size></color>
 
 
 <size=20><b>3D Modeling</b></size>
+<color=#242424><size=12><b>André Sá</b></size></color>
+<color=#242424><size=12><b>Ricardo Carvalho</b></size></color>
+<color=#242424><size=12><b>Rita Duarte</b></size></color>
+<color=#242424><size=12><b>Simão Silva</b></size></color>
 
 
 <size=20><b>Animation</b></size>
+<color=#242424><size=12><b>André Esteves</b></size></color>
+<color=#242424><size=12><b>Ricardo Carvalho</b></size></color>
+<color=#242424><size=12><b>Vasco Rocha</b></size></color>
 
 
 <size=20><b>Texturing and Materials</b></size>
+<color=#242424><size=12><b>André Sá</b></size></color>
+<color=#242424><size=12><b>Ricardo Carvalho</b></size></color>
+<color=#242424><size=12><b>Rita Duarte</b></size></color>
+<color=#242424><size=12><b>Simão Silva</b></size></color>
 
 
 <size=20><b>Audio</b></size>
 
-<color=#0F0F0F><size=17><b>Soundtrack</b></size>
+<color=#0F0F0F><size=17><b>Soundtrack</b></size></color>
+<color=#242424><size=12><b>Luís Silva</b></size></color>
+<color=#242424><size=12><b>Vasco Rocha</b></size></color>
 
-<size=17><b>Sound Effects</b></size></color>
+<color=#0F0F0F><size=17><b>Sound Effects</b></size></color>
+<color=#242424><size=12><b>Luís Silva</b></size></color>
+<color=#242424><size=12><b>Vasco Rocha</b></size></color>
 
 
 <size=20><b>Level Design</b></size>
+<color=#242424><size=12><b>André Sá</b></size></color>
 
 
 <size=20><b>UI Design</b></size>
 
+<color=#0F0F0F><size=17><b>Menus</b></size></color>
+<color=#242424><size=12><b>Luís Silva</b></size></color>
+
+<color=#0F0F0F><size=17><b>In-Game UI</b></size></color>
+<color=#242424><size=12><b>Ricardo Carvalho</b></size></color>
+
 
 <size=20><b>External Sources</b></size>
+
+<color=#0F0F0F><size=17><b>Medieval Combat Soundpack</b></size></color>
+<color=#191919><size=15><b>Developed by Yap Studio Production</b></size></color>
+<color=#242424><size=12><b>Modified</b></size></color>
+<color=#242424><size=12><b>Available at freesound.org/people/Yap_Audio_Production/packs/13842/</b></size></color>
+
+<color=#0F0F0F><size=17><b>Artillery Explosion (Close) (Mixed) Sound</b></size></color>
+<color=#191919><size=15><b>Developed by EFlexMusic</b></size></color>
+<color=#242424><size=12><b>Available at freesound.org/people/EFlexMusic</b></size></color>
+
+
+<color=#0F0F0F><size=17><b>Flying Back Death Animation</b></size></color>
+<color=#191919><size=15><b>Developed by Abode</b></size></color>
+<color=#242424><size=12><b>Available at mixamo.com</b></size></color>
+
+<color=#0F0F0F><size=17><b>Unarmed Walk Forward Animation</b></size></color>
+<color=#191919><size=15><b>Developed by Abode</b></size></color>
+<color=#242424><size=12><b>Available at mixamo.com</b></size></color>
+
+<color=#0F0F0F><size=17><b>Standing Melee Attack Downward Animation</b></size></color>
+<color=#191919><size=15><b>Developed by Abode</b></size></color>
+<color=#242424><size=12><b>Available at mixamo.com</b></size></color>
+
+
+<color=#0F0F0F><size=17><b>Medieval Victoriana Font</b></size></color>
+<color=#191919><size=15><b>Developed by Paul Lloyd</b></size></color>
+<color=#242424><size=12><b>Available at dafont.com/medieval-victoriana.font</b></size></color>
+
+<color=#0F0F0F><size=17><b>MedievalSharp Font</b></size></color>
+<color=#191919><size=15><b>Developed by Wojciech Kalinowski</b></size></color>
+<color=#242424><size=12><b>Available at fonts.google.com/specimen/MedievalSharp</b></size></color>
+
+
+<color=#0F0F0F><size=17><b>Skeleton - PBR - Animated Low Poly Free low-poly 3D Model</b></size></color>
+<color=#191919><size=15><b>Developed by lugiagames</b></size></color>
+<color=#242424><size=12><b>Available at cgtrader.com</b></size></color>
+
 
 
 <size=20><b>The Team</b></size>
 
+<color=#242424><size=12><b>André Esteves</b></size></color>
+<color=#242424><size=12><b>André Sá</b></size></color>
+<color=#242424><size=12><b>Luís Silva</b></size></color>
+<color=#242424><size=12><b>Ricardo Carvalho</b></size></color>
+<color=#242424><size=12><b>Ricardo Teixeira</b></size></color>
+<color=#242424><size=12><b>Rita Duarte</b></size></color>
+<color=#242424><size=12><b>Simão Silva</b></size></color>
+<color=#242424><size=12><b>Vasco Rocha</b></size></color>
+
+
 
 <size=20><b>Acknowledgements</b></size>
+
+<color=#242424><size=12><b>Global Game Jam</b></size></color>
+<color=#242424><size=12><b>NeCGM - Núcleo Estudantil de Computação Gráfica e Multimédia</b></size></color>
+<color=#242424><size=12><b>FEUP - Faculdade de Engenharia da Universidade do Porto</b></size></color>
+<color=#242424><size=12><b>GGJ2019 Community</b></size></color>
