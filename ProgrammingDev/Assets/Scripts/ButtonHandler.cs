@@ -21,7 +21,7 @@ public class ButtonHandler : MonoBehaviour
 
     public void credits()
     {
-        StartCoroutine("DelayedSceneChange");
+        StartCoroutine("DelayedCredits");
         Color black = blackScreen.color;
         black.a = 1;
         blackScreen.color = black;
@@ -31,12 +31,23 @@ public class ButtonHandler : MonoBehaviour
 
     public void mainMenu()
     {
-        SceneManager.LoadScene("MainMenu");
+        StartCoroutine("DelayedMainMenu");
+        Color black = blackScreen.color;
+        black.a = 1;
+        blackScreen.color = black;
+        blackScreen.CrossFadeAlpha(0.0f, 0f, true);
+        blackScreen.CrossFadeAlpha(1.0f, 2f, false);
     }
 
-    IEnumerator DelayedSceneChange()
+    IEnumerator DelayedCredits()
     {
         yield return new WaitForSeconds(2f);
-        SceneManager.LoadScene("Level_teste_Sa");
+        SceneManager.LoadScene("Credits");
+    }
+
+    IEnumerator DelayedMainMenu()
+    {
+        yield return new WaitForSeconds(2f);
+        SceneManager.LoadScene("MainMenu");
     }
 }
