@@ -7,6 +7,8 @@ using UnityEngine.SceneManagement;
 
 public class ButtonHandler : MonoBehaviour
 {
+    public Image blackScreen;
+
     public void quit()
     {
         Application.Quit();
@@ -19,12 +21,22 @@ public class ButtonHandler : MonoBehaviour
 
     public void credits()
     {
-        
+        StartCoroutine("DelayedSceneChange");
+        Color black = blackScreen.color;
+        black.a = 1;
+        blackScreen.color = black;
+        blackScreen.CrossFadeAlpha(0.0f, 0f, true);
+        blackScreen.CrossFadeAlpha(1.0f, 2f, false);
     }
 
     public void mainMenu()
     {
         SceneManager.LoadScene("MainMenu");
     }
-    
+
+    IEnumerator DelayedSceneChange()
+    {
+        yield return new WaitForSeconds(2f);
+        SceneManager.LoadScene("Level_teste_Sa");
+    }
 }
