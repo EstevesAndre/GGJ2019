@@ -18,7 +18,7 @@ public class ButtonHandler : MonoBehaviour
 
     public void play()
     {
-        SceneManager.LoadScene("Level_teste_Sa");
+        SceneManager.LoadScene("Pause_Menu_Level");
     }
 
     public void resume()
